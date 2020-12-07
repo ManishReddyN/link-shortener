@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/nmreddy1911/link-shortener?style=social)](https://github.com/nmreddy1911/link-shortener/stargazers)
 ![npm](https://img.shields.io/npm/v/npm)
-![GitHub](https://img.shields.io/github/license/twbs/bootstrap?logoColor=%23001202)
+![GitHub](https://img.shields.io/github/license/nmreddy1911/link-shortener?logoColor=%23001202)
 
 ### This project is built using the MERN Stack
 
