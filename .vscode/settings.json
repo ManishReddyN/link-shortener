@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/af12da9f-9f56-4282-82ed-8189ef7d3ee8/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/linkzbe",
+    "appService.deploySubpath": "backend"
+}
