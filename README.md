@@ -1,10 +1,14 @@
-# Linkz - Link Shortener
+<p align="center">
+<img src="https://github.com/nmreddy1911/link-shortener/blob/main/frontend/public/logo512.png"/>
+</p>
+
+<h1 align="center">Linkz - Link Shortener</h1>
 
 [![GitHub stars](https://img.shields.io/github/stars/nmreddy1911/link-shortener?style=social)](https://github.com/nmreddy1911/link-shortener/stargazers)
 ![npm](https://img.shields.io/npm/v/npm)
 ![GitHub](https://img.shields.io/github/license/nmreddy1911/link-shortener?logoColor=%23001202)
 
-### This project is built using the MERN Stack
+### This project is built using the MERN Stack and [Chakra-UI](https://chakra-ui.com/)
 
 ## Installation Instructions
 

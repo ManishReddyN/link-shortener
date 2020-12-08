@@ -321,11 +321,7 @@ function App() {
         <Box paddingBottom="0.8rem">
           <Heading size="sm" as="samp">
             Made With 🤍 By{"  "}
-            <Link
-              color="white"
-              href="https://github.com/nmreddy1911"
-              isExternal
-            >
+            <Link color="white" href="https://nmreddy.ml" isExternal>
               Manish
               <ExternalLinkIcon mx="2px" />
             </Link>
@@ -360,7 +356,7 @@ function App() {
           textAlign="center"
           defaultValue={shortid}
           isPreviewFocusable={false}
-          placeholder="ex: test00 in nmr.ml/test00"
+          placeholder="ex: backhalf in linkz.cf/backhalf"
         >
           {(props) => (
             <>
