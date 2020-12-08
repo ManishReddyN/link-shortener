@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/nmreddy1911/link-shortener/blob/main/frontend/public/logo512.png"/>
+<img src="https://github.com/nmreddy1911/link-shortener/blob/main/frontend/public/logo192.png"/>
 </p>
 
 <h1 align="center">Linkz - Link Shortener</h1>
