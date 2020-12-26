@@ -270,7 +270,7 @@ function App() {
 
   const displayAllLinks = () => {
     return (
-      <Box marginTop="20px" paddingBottom="30px">
+      <Box marginTop="20px" paddingBottom="30px" maxW="90%">
         <Heading color="white" size="md" margin="10px" textAlign="center">
           <Box bgColor="#3182ce">Your Links</Box>
         </Heading>
@@ -284,7 +284,7 @@ function App() {
                   </Link>
                 </AlertTitle>
                 <Box width="35rem">
-                  <Text isTruncated fontSize="12px" width="25rem">
+                  <Text isTruncated fontSize="12px" maxW="50%">
                     {link.mainlink}
                   </Text>
                 </Box>

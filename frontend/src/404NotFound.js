@@ -26,6 +26,8 @@ export default function NotFound() {
               <Image src={gif} alt="404 Not Found" objectFit="cover" />
             </Center>
             <Heading marginTop="50px">THIS PLACE DOES NOT EXIST!!</Heading>
+            <Heading size="md">Please Check your short URL.</Heading>
+            <Heading size="md">We are very sensitive to case :)</Heading>
             <Heading marginTop="30px">Go To Our</Heading>
             <Heading>
               <Link href="/" security="" color="blue.500">

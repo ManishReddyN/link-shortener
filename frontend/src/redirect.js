@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import gif from "./resources/loading.webp";
 import { API } from "./backend";
+import NotFound from "./404NotFound";
 
 function Redirection({ match }) {
   const {
@@ -10,11 +11,19 @@ function Redirection({ match }) {
   } = match;
 
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
   const [recLink, setLink] = useState();
   useEffect(() => {
-    getlink().then((k) => setLink(k));
+    getlink().then((k) => {
+      if (k.error) {
+        console.log(k.error);
+        setError(true);
+      } else {
+        setLink(k);
+      }
+    });
     // eslint-disable-next-line
-  }, [loading, recLink]);
+  }, [error, loading, recLink]);
 
   const getlink = () => {
     let sid = { shortid: shortid };
@@ -40,7 +49,7 @@ function Redirection({ match }) {
   };
 
   return (
-    loading && (
+    (loading && !error && (
       <div>
         <Box maxH="100vh" paddingTop="20px">
           <Grid
@@ -61,7 +70,8 @@ function Redirection({ match }) {
         </Box>
         {gotoURL()}
       </div>
-    )
+    )) ||
+    (error && <NotFound></NotFound>)
   );
 }
 export default Redirection;
