@@ -46,17 +46,13 @@ exports.newlink = async (req, res, next) => {
 
 exports.getlink = (req, res) => {
   let shortid = req.body.shortid;
-  ShortLink.findOneAndUpdate(
-    { shortid },
-    { $inc: { count: 1 } },
-    (err, shortlink) => {
-      if (err || !shortlink) {
-        return res.status(400).json({
-          error: "Invalid URL",
-        });
-      }
-
-      return res.status(200).json(shortlink.link);
+  ShortLink.findOne({ shortid }, (err, shortlink) => {
+    if (err || !shortlink) {
+      return res.status(400).json({
+        error: "Invalid URL",
+      });
     }
-  );
+
+    return res.status(200).json(shortlink.link);
+  });
 };
